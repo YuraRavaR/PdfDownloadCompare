@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static org.Constant.*;
+
 public class PdfComparison {
     public static void main(String[] args) throws IOException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
@@ -16,7 +18,8 @@ public class PdfComparison {
         String file2 = "src/main/resources/data/File14.pdf";
         String results = "src/main/resources/results/result_" + currentDateTime;
 
-        new PdfComparator(file1, file2).compare().writeTo(results);
+
+        new PdfComparator(expected_Pdf_File_Path, actual_Pdf_File_Path).compare().writeTo(results);
 
         checkDifferences(file1, file2);
     }
