@@ -6,7 +6,7 @@
 
     <groupId>org.automation.simple</groupId>
     <artifactId>pdfcompare</artifactId>
-    <version>1.0.1</version>
+    <version>2.0.0</version>
 
     <dependencies>
         <dependency>
@@ -19,17 +19,6 @@
                     <artifactId>logback-classic</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.13.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.5.3</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
@@ -65,7 +54,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>org.PdfComparison</mainClass>
+                            <mainClass>pdfCompare.PdfCompare</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -80,5 +69,7 @@
             </plugin>
         </plugins>
     </build>
+
+
 
 </project>

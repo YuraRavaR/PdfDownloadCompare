@@ -1,7 +1,8 @@
-# Default ignored files
 /shelf/
 /workspace.xml
 .idea/
-.results/
 *.log
 target/
+
+/src/test/
+
